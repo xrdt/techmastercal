@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Thesis Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160926T140000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160926T150000
+DESCRIPTION:Alkaline salts of sodium and potassium: from C–X reduction t
+ o C–H functionalization and beyond
+LOCATION:Noyes 153 (J. Holmes Sturdivant Lecture Hall)
+END:VEVENT
+END:VCALENDAR

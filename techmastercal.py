@@ -130,18 +130,18 @@ for table in soup.findAll('table', 'events day ongoing'):
 
         m += 1
 
-cal = Calendar()
-cal.add('prodid', '-//My calendar product//mxm.dk//')
-cal.add('version', '2.0')
-pacific = pytz.timezone('America/Los_Angeles')
 i = 1
 
 for event in eventtitles:
+    cal = Calendar()
+    cal.add('prodid', '-//My calendar product//mxm.dk//')
+    cal.add('version', '2.0')
+    pacific = pytz.timezone('America/Los_Angeles')
     calevent = Event()
     calevent.add('summary', event)
   
     if seminarname.get(event) == None:
-        continue
+    	pass
     else: 
         calevent.add('description', seminarname.get(event))
 
@@ -151,16 +151,16 @@ for event in eventtitles:
     eventend = endtime[event]
     startsplit = eventstart.split()
     endsplit = eventend.split()
-
+    
     starthour = startsplit[0].split(':')[0]
     startminute = startsplit[0].split(':')[1]
     endhour = endsplit[0].split(':')[0]
     endminute = endsplit[0].split(':')[1]
 
-    if startsplit[1] == 'pm':
-        starthour += 12
-    elif endsplit[1] == 'pm':
-        endhour += 12
+    if startsplit[1] == 'pm': 
+    	starthour = int(starthour) + 12
+    if endsplit[1] == 'pm':
+        endhour = int(endhour) + 12
     
     calevent.add('dtstart', datetime(now.year, now.month, now.day, \
             int(starthour), int(startminute), 0, tzinfo = pacific))
@@ -168,7 +168,7 @@ for event in eventtitles:
             int(endhour), int(endminute), 0, tzinfo = pacific))
     
     if location.get(event) == None:
-        continue
+        pass
     else:
         calevent.add('location', location.get(event))
 

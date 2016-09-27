@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Geological and Planetary Sciences Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160926T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160926T170000
+DESCRIPTION:Recent applications of the thorium-230 stopwatch in deep-sea s
+ ediments
+LOCATION:Arms 155 (Robert P. Sharp Lecture Hall)
+END:VEVENT
+END:VCALENDAR
