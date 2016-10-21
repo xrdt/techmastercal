@@ -1,180 +1,158 @@
 from bs4 import BeautifulSoup
 import urllib
-import re
 from icalendar import Calendar, Event
 from datetime import datetime
 import pytz
 
-eventtitles = []
-ongoingtitles= []
-starttime = {}
-startongoing = {}
-endtime = {}
-endongoing = {}
-location = {}
-locationongoing = {}
-seminarname = {}
-seminarongoing = {}
-
 url = urllib.urlopen('https://www.caltech.edu/master-calendar/day').read()
-soup = BeautifulSoup(url, 'html.parser')
+soup = BeautifulSoup(url, 'lxml')
 
-i = 0
-j = 0
-k = 0
-m = 0
+def get_eventnames():
+    '''pulls all the event names from the website and stores them in a list
+       so we can add them all to the calendar using icalendar'''
+    eventnames = []
+    for event in soup.findAll('div', 'event-title'):
+        a_tag = event.find('a')
+        event_name = a_tag.string
+        eventnames.append(event_name)
+    return eventnames
 
-for table in soup.findAll('table', {'class' : 'events day'}):
-    for a in table.findAll('a', {'href': \
-                 re.compile('^(/content/.*)')}):                 
-        eventtitles.append(' '.join(a.contents))
-
-    for start in table.findAll('div', 'start_date'):
-        starttime[eventtitles[i]] = start.contents[0]
+def get_starttimes():
+    '''pulls all start times from the website and stores them in a 
+       dictionary {eventname:starttime}.'''
+    starttimes = {}
+    i = 0
+    for start in soup.findAll('div', 'start_date'):
+        len_start = len(start.string)
+        start_time = start.string[:len_start-3]  
+        event_title = start.findNext('div', 'event-title')
+        eventname = event_title.string
+        starttimes[eventname] = start_time
         i += 1
+    return starttimes
 
-    for end in table.findAll('div', 'end_date'):
-        endtime[eventtitles[j]] = end.contents[0]
-        j += 1
-
-    for td in table.findAll('td', 'event-info'):
-        a = td.find('div')
-        output = a['class'][0]
-        found = False
-        parent = a.find_parent('td')
-        
-        while not found: 
-            if output == 'event-location':
-                location[eventtitles[k]] = a.contents[0]
-                found = True
-            else:
-                a = a.find_next('div')
-                output = a['class'][0]
-                newparent = a.find_parent('td')
-                if newparent != parent:
-                    break
-        k += 1
-
-        a = td.find('div')
-        output = a['class'][0]
-        found = False
-        parent = a.find_parent('td')
-        found = False
-
-        while not found:
-            if output == 'seminar-title':
-                seminarname[eventtitles[m]] = a.contents[0]
-                found = True
-            else:
-                a = a.find_next('div')
-                output = a['class'][0]
-                newparent = a.find_parent('td')
-                if newparent != parent:
-                    break
-
-        m += 1
-
-i = 0
-j = 0
-k = 0
-m = 0
-
-for table in soup.findAll('table', 'events day ongoing'):
-    for a in table.findAll('a', {'href': re.compile(\
-                            '^(/content/.*)')}):
-        ongoingtitles.append(' '.join(a.contents))
-
-    for start in table.findAll('div','start_date'):
-        startongoing[ongoingtitles[i]] = start.contents[0]
+def get_endtimes():
+    '''pulls all start times from the website and stores them in a 
+       dictionary'''
+    endtimes = {}
+    i = 0
+    for end in soup.findAll('div', 'end_date'):
+        end_time = end.string
+        event_title = end.findNext('div', 'event-title')
+        eventname = event_title.string
+        endtimes[eventname] = end_time
         i += 1
+    return endtimes
 
-    for end in table.findAll('div', 'end_date'):
-        endongoing[ongoingtitles[j]] = end.contents[0]
-        j += 1
+def get_locations():
+    '''pulls all event locations from the website and stores them in 
+       a dictionary. not every event has a location, so using a 
+       dictionary is a way to see which events have a location'''
+    locations = {}
+    for div_location in soup.findAll('div', 'event-location'):
+        location = div_location.string
+        event_title = div_location.findPreviousSibling('div', 'event-title')
+        eventname = event_title.string
+        locations[eventname] = location
+    return locations
+
+def get_seminarnames():
+    '''pulls all seminar names from the website and stores them in 
+       a dictionary, same deal as get_locations'''
+    seminarnames = {}
+    for seminar_title in soup.findAll('div', 'seminar-title'):
+        seminarname = seminar_title.string
+        event_title = seminar_title.findPreviousSibling('div', \
+                'event-title')
+        eventname = event_title.string
+        seminarnames[eventname] = seminarname
+    return seminarnames
+
+def main_events():
+    eventnames = get_eventnames()
+    starttimes = get_starttimes()
+    endtimes = get_endtimes()
+    seminarnames = get_seminarnames()
+    locations = get_locations()
+    return eventnames, starttimes, endtimes, seminarnames, locations
 
 
-    for td in table.findAll('td', 'event-info'):
-        a = td.find('div')
-        output = a['class'][0]
-        found = False
-        parent = a.find_parent('td')
-        
-        while not found: 
-            if output == 'event-location':
-                locationongoing[ongoingtitles[k]] = a.contents[0]
-                found = True
-            else:
-                a = a.find_next('div')
-                output = a['class'][0]
-                newparent = a.find_parent('td')
-                if newparent != parent:
-                    break
-        k += 1
-
-        a = td.find('div')
-        output = a['class'][0]
-        found = False
-        parent = a.find_parent('td')
-        found = False
-
-        while not found:
-            if output == 'seminar-title':
-                seminarongoing[ongoingtitles[m]] = a.contents[0]
-                found = True
-            else:
-                a = a.find_next('div')
-                output = a['class'][0]
-                newparent = a.find_parent('td')
-                if newparent != parent:
-                    break
-
-        m += 1
-
-i = 1
-
-for event in eventtitles:
-    cal = Calendar()
-    cal.add('prodid', '-//My calendar product//mxm.dk//')
-    cal.add('version', '2.0')
-    pacific = pytz.timezone('America/Los_Angeles')
-    calevent = Event()
-    calevent.add('summary', event)
-  
-    if seminarname.get(event) == None:
-    	pass
-    else: 
-        calevent.add('description', seminarname.get(event))
-
+class cal_events():
     now = datetime.now()
+    pacific = pytz.timezone('America/Los_Angeles')
+            
+    def add_times(self, eventstart, eventend):
+        if len(eventstart) > 5:
+            startsplit = eventstart.split()
+            endsplit = eventend.split()
+            starthour = startsplit[0].split(':')[0]
+            startminute = startsplit[0].split(':')[1]
+            endhour = endsplit[0].split(':')[0]
+            endminute = endsplit[0].split(':')[1]
 
-    eventstart = starttime[event]
-    eventend = endtime[event]
-    startsplit = eventstart.split()
-    endsplit = eventend.split()
-    
-    starthour = startsplit[0].split(':')[0]
-    startminute = startsplit[0].split(':')[1]
-    endhour = endsplit[0].split(':')[0]
-    endminute = endsplit[0].split(':')[1]
+            if startsplit[1] == 'pm' and int(starthour) < 12: 
+                starthour = int(starthour) + 12
+            if endsplit[1] == 'pm' and int(endhour) < 12:
+                endhour = int(endhour) + 12
+            return starthour, startminute, endhour, endminute
 
-    if startsplit[1] == 'pm': 
-    	starthour = int(starthour) + 12
-    if endsplit[1] == 'pm':
-        endhour = int(endhour) + 12
-    
-    calevent.add('dtstart', datetime(now.year, now.month, now.day, \
-            int(starthour), int(startminute), 0, tzinfo = pacific))
-    calevent.add('dtend', datetime(now.year, now.month, now.day, \
-            int(endhour), int(endminute), 0, tzinfo = pacific))
-    
-    if location.get(event) == None:
-        pass
-    else:
-        calevent.add('location', location.get(event))
+        else: 
+            startmonth = eventstart.split('/')[0]
+            startday = eventstart.split('/')[1]
+            endmonth = eventend.split('/')[0]
+            endday = eventend.split('/')[1]
+            return startmonth, startday, endmonth, endday 
+        	
+    def add_events(self, eventnames, seminarnames, locations, starttimes, \
+            endtimes):
+        i = 1
+        for event in eventnames:
+            cal = Calendar()
+            cal.add('prodid', '-//My calendar product//mxm.dk//')
+            cal.add('version', '2.0')
 
-    cal.add_component(calevent)
-    f = open('test' + str(i) + '.ics', 'w')
-    f.write(cal.to_ical())
-    f.close()
-    
-    i += 1
+            calevent = Event()
+            calevent.add('summary', event)
+
+            if seminarnames.get(event) == None:
+                pass
+            else: 
+                calevent.add('description', seminarnames.get(event))
+
+            if locations.get(event) == None: 
+                pass
+            else: 
+                calevent.add('location', locations.get(event))
+            
+            if len(starttimes[event]) > 5:
+                starthour, startminute, endhour, endminute = \
+                    self.add_times(starttimes[event], endtimes[event])
+
+                calevent.add('dtstart', datetime(self.now.year, \
+                self.now.month, self.now.day, int(starthour), \
+                int(startminute), 0, tzinfo = self.pacific))
+
+                calevent.add('dtend', datetime(self.now.year, \
+                self.now.month, self.now.day, int(endhour), \
+                int(endminute), 0, tzinfo = self.pacific))
+            else: 
+                startmonth, startday, endmonth, endday = \
+                        self.add_times(starttimes[event], endtimes[event])
+                calevent.add('dtstart', datetime(self.now.year, \
+                        int(startmonth), int(startday), \
+                        tzinfo = self.pacific))
+                calevent.add('dtend', datetime(self.now.year, \
+                        int(endmonth), int(endday), tzinfo = self.pacific))
+
+            cal.add_component(calevent)
+            f = open('event' + str(i) + '.ics', 'w')
+            f.write(cal.to_ical())
+            f.close()
+            i += 1
+
+if __name__ == '__main__':
+    eventnames, starttimes, endtimes, seminarnames, locations \
+            = main_events()
+    calendar = cal_events()
+    calendar.add_events(eventnames, seminarnames, locations, starttimes, \
+            endtimes)
