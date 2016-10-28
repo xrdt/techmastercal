@@ -6,4 +6,4 @@ This project uses Python and the Beautiful Soup package to pull events from the 
 I have created a launchctl plist which will run the python script each day at 12:40am. From there, the user can import 
 the .ics files into their calendar application manually. 
 
-The next stage of development is to write a script which can automatically import all .ics files.
+The .scpt file is an AppleScript file which automatically imports the .ics files into Calendar application. 
