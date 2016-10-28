@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Inorganic-Organometallics Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161028T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161028T170000
+DESCRIPTION:Theoretical Insights into Substrate Selectivity: P3EFe-N2 Medi
+ ated N2-to-NH3 Conversion vs HER
+LOCATION:Noyes 147 (J. Holmes Sturdivant Lecture Hall)
+END:VEVENT
+END:VCALENDAR

@@ -8,13 +8,14 @@
     <array>
       <string>/usr/local/bin/python</string>
       <string>techmastercal.py</string>
+      <string>osascript techmastercal.scpt</string>
     </array>
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>Minute</key>
-        <integer>40</integer>
+        <integer>37</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/users/janyang/techmastercal/</string>
