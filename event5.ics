@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Caltech Library Workshop - "Introduction to 3D Printing at the Cal
+ tech Library"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T130000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T140000
+LOCATION:Millikan 9th Floor
+END:VEVENT
+END:VCALENDAR

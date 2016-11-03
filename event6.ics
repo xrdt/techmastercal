@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Theory of Computing Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T133000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T143000
+DESCRIPTION:Computational Efficiency and Robust Statistics
+LOCATION:Annenberg 213
+END:VEVENT
+END:VCALENDAR

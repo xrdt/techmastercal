@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Chemical Engineering Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
+DESCRIPTION:Engineered biosynthesis of functionalized natural products
+LOCATION:Spalding Laboratory 106 (Hartley Memorial Seminar Room)
+END:VEVENT
+END:VCALENDAR

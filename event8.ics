@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Medical Engineering Distinguished Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
+DESCRIPTION:Biodesign: The Process of Innovating New Medical Technologies
+LOCATION:Annenberg 105
+END:VEVENT
+END:VCALENDAR

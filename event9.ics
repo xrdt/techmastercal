@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Physics Research Conference
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
+DESCRIPTION:Light from Darkness? Searching for Dark Matter in the Sky
+LOCATION:East Bridge 201
+END:VEVENT
+END:VCALENDAR
