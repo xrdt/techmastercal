@@ -78,8 +78,7 @@ def get_speakers():
         level1 = speaker_div.contents[0]
         level2 = level1.contents[0]
         level3 = level2.contents[0]
-        name = level3.contents[0]
-        speaker = name.string
+        speaker = level3.contents
         parent1 = speaker_div.parent
         parent2 = parent1.parent
         parent3 = parent2.parent
@@ -88,15 +87,12 @@ def get_speakers():
         speakernames[eventname] = speaker
     return speakernames
 
-def create_description(seminarnames, speakers):
+def create_description(senimarnames, speakers):
     descriptions = {}
     for event in seminarnames:
         if speakers.get(event) == None:
             descriptions[event] = seminarnames.get(event)
-        else:
-            combined = seminarnames.get(event) + '\n' + speakers.get(event)
-            descriptions[event] = combined
-    return descriptions
+        else
 
 def main_events():
     eventnames = get_eventnames()
@@ -105,9 +101,9 @@ def main_events():
     seminarnames = get_seminarnames()
     locations = get_locations()
     speakernames = get_speakers()
-    descriptions = create_description(seminarnames, speakernames)
-    return eventnames, starttimes, endtimes, locations, descriptions
-           
+    return eventnames, starttimes, endtimes, seminarnames, locations, \
+            speakernames
+
 class cal_events():
     now = datetime.now()
     pacific = pytz.timezone('America/Los_Angeles')
@@ -134,8 +130,8 @@ class cal_events():
             endday = eventend.split('/')[1]
             return startmonth, startday, endmonth, endday 
         	
-    def add_events(self, eventnames, locations, starttimes, \
-            endtimes, descriptions):
+    def add_events(self, eventnames, seminarnames, locations, starttimes, \
+            endtimes, speakers):
         i = 1
         for event in eventnames:
             cal = Calendar()
@@ -145,10 +141,15 @@ class cal_events():
             calevent = Event()
             calevent.add('summary', event)
 
-            if descriptions.get(event) == None:
+            if seminarnames.get(event) == None:
                 pass
             else: 
-                calevent.add('description', descriptions.get(event))
+                calevent.add('description', seminarnames.get(event))
+            
+            if speakers.get(event) == None:
+                pass
+            else: 
+                calevent.add('description', speakers.get(event))
 
             if locations.get(event) == None: 
                 pass
@@ -190,8 +191,8 @@ class cal_events():
             i += 1
 
 if __name__ == '__main__':
-    eventnames, starttimes, endtimes, locations, descriptions \
+    eventnames, starttimes, endtimes, seminarnames, locations, speakers \
             = main_events()
     calendar = cal_events()
-    calendar.add_events(eventnames, locations, starttimes, \
-            endtimes, descriptions)
+    calendar.add_events(eventnames, seminarnames, locations, starttimes, \
+            endtimes, speakers)

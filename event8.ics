@@ -5,7 +5,9 @@ BEGIN:VEVENT
 SUMMARY:Medical Engineering Distinguished Seminar
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
-DESCRIPTION:Biodesign: The Process of Innovating New Medical Technologies
+DESCRIPTION:Biodesign: The Process of Innovating New Medical Technologies\
+ nJosh Makower\, MD\, General Partner\, Healthcare Team\, New Enterprise As
+ sociates (NEA)
 LOCATION:Annenberg 105
 END:VEVENT
 END:VCALENDAR

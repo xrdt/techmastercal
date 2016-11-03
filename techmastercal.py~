@@ -3,6 +3,7 @@ import urllib
 from icalendar import Calendar, Event
 from datetime import datetime
 import pytz
+import re
 
 url = urllib.urlopen('https://www.caltech.edu/master-calendar/day').read()
 soup = BeautifulSoup(url, 'lxml')
@@ -68,15 +69,46 @@ def get_seminarnames():
         seminarnames[eventname] = seminarname
     return seminarnames
 
+def get_speakers():
+    '''pulls all speaker names and stores them in dictionary with keys as
+       events and values as speaker names and descriptions.'''
+    speakernames = {} 
+    p = re.compile('^field field-name-speaker[a-zA-Z- ]*')
+    for speaker_div in soup.findAll('div', re.compile(p)):
+        level1 = speaker_div.contents[0]
+        level2 = level1.contents[0]
+        level3 = level2.contents[0]
+        name = level3.contents[0]
+        speaker = name.string
+        parent1 = speaker_div.parent
+        parent2 = parent1.parent
+        parent3 = parent2.parent
+        event_title = parent3.findPreviousSibling('div', 'event-title')
+        eventname = event_title.string
+        speakernames[eventname] = speaker
+    return speakernames
+
+def create_description(seminarnames, speakers):
+    descriptions = {}
+    for event in seminarnames:
+        if speakers.get(event) == None:
+            descriptions[event] = seminarnames.get(event)
+        else:
+            print seminarnames.get(event), speakers.get(event)
+            combined = seminarnames.get(event) + '\n' + speakers.get(event)
+            descriptions[event] = combined
+    return descriptions
+
 def main_events():
     eventnames = get_eventnames()
     starttimes = get_starttimes()
     endtimes = get_endtimes()
     seminarnames = get_seminarnames()
     locations = get_locations()
-    return eventnames, starttimes, endtimes, seminarnames, locations
-
-
+    speakernames = get_speakers()
+    descriptions = create_description(seminarnames, speakernames)
+    return eventnames, starttimes, endtimes, locations, descriptions
+           
 class cal_events():
     now = datetime.now()
     pacific = pytz.timezone('America/Los_Angeles')
@@ -103,8 +135,8 @@ class cal_events():
             endday = eventend.split('/')[1]
             return startmonth, startday, endmonth, endday 
         	
-    def add_events(self, eventnames, seminarnames, locations, starttimes, \
-            endtimes):
+    def add_events(self, eventnames, locations, starttimes, \
+            endtimes, descriptions):
         i = 1
         for event in eventnames:
             cal = Calendar()
@@ -114,10 +146,10 @@ class cal_events():
             calevent = Event()
             calevent.add('summary', event)
 
-            if seminarnames.get(event) == None:
+            if descriptions.get(event) == None:
                 pass
             else: 
-                calevent.add('description', seminarnames.get(event))
+                calevent.add('description', descriptions.get(event))
 
             if locations.get(event) == None: 
                 pass
@@ -159,8 +191,8 @@ class cal_events():
             i += 1
 
 if __name__ == '__main__':
-    eventnames, starttimes, endtimes, seminarnames, locations \
+    eventnames, starttimes, endtimes, locations, descriptions \
             = main_events()
     calendar = cal_events()
-    calendar.add_events(eventnames, seminarnames, locations, starttimes, \
-            endtimes)
+    calendar.add_events(eventnames, locations, starttimes, \
+            endtimes, descriptions)

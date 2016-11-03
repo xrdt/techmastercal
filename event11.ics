@@ -6,7 +6,9 @@ SUMMARY:Biochemistry Seminar
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
 DESCRIPTION:Function and dysfunction of nuclear envelope proteins: mechani
- sms of protein quality control and cholesterol metabolism
+ sms of protein quality control and cholesterol metabolism\nChristian Schli
+ eker\, Associate Professor\, Department of Molecular Biophysics & Biochemi
+ stry\, and Department of Cell Biology\, Yale University
 LOCATION:Noyes 147 (J. Holmes Sturdivant Lecture Hall)
 END:VEVENT
 END:VCALENDAR

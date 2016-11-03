@@ -5,7 +5,9 @@ BEGIN:VEVENT
 SUMMARY:Chemical Engineering Seminar
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
-DESCRIPTION:Engineered biosynthesis of functionalized natural products
+DESCRIPTION:Engineered biosynthesis of functionalized natural products\nWe
+ njun Zhang\, Assistant Professor\, Chemical Engineering\, University of Ca
+ lifornia\, Berkeley
 LOCATION:Spalding Laboratory 106 (Hartley Memorial Seminar Room)
 END:VEVENT
 END:VCALENDAR
