@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Stargazing Lecture
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T200000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T220000
+DESCRIPTION:How to Prepare for the Great American Eclipse of 2017\nErika H
+ amden\, Postdoctoral Scholar in Physics\, Caltech
+LOCATION:Baxter Lecture Hall
+END:VEVENT
+END:VCALENDAR

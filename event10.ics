@@ -2,12 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:EE Systems Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
-DESCRIPTION:High-Dimensional Analysis of Stochastic Optimization Algorithm
- s: Limiting Dynamics and Phase Transitions\nYue Lu\, Associate Professor\,
-  Electrical Engineering\, Harvard University
-LOCATION:Moore B280
+SUMMARY:(Men's Basketball) Caltech at Long Beach St.
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T190000
 END:VEVENT
 END:VCALENDAR

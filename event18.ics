@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:Caltech/UCLA Joint Analysis Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T170000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T180000
+DESCRIPTION:TBA \nJoseph Viola\, Mathematics Department\, Universite de Na
+ ntes
+LOCATION:Sloan 151
+END:VEVENT
+END:VCALENDAR

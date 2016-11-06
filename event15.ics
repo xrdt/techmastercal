@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//My calendar product//mxm.dk//
+BEGIN:VEVENT
+SUMMARY:IQIM Postdoctoral and Graduate Student Seminar 
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T170000
+DESCRIPTION:Rare-earth ions in crystals for integrating quantum resources\
+ nJohn Bartholomew\, Postdoctoral Scholar\, Faraon Group
+LOCATION:East Bridge 114
+END:VEVENT
+END:VCALENDAR

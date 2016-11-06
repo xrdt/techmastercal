@@ -2,12 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Physics Research Conference
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T170000
-DESCRIPTION:Light from Darkness? Searching for Dark Matter in the Sky\nTra
- cy Slatyer\, Jerrold R. Zacharias Career Development Assistant Professor o
- f Physics\, MIT
-LOCATION:East Bridge 201
+SUMMARY:Ice Worlds
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T173000
+LOCATION:Beckman Auditorium
 END:VEVENT
 END:VCALENDAR

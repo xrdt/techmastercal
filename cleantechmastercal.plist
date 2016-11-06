@@ -6,14 +6,15 @@
     <string>cleantechmastercal</string>
     <key>ProgramArguments</key>
     <array>
-        <string>rm *.ics</string>
+        <string>rm</string>
+        <string>*.ics</string>
     </array>
     <key>StartCalendarInverval</key>
     <dict>
         <key>Hour</key>
         <integer>00</integer>
         <key>Minute</key>
-        <integer>00</integer>
+        <integer>01</integer>
     </dict>
     <key>WorkingDirectory</key>
     <string>/users/janyang/techmastercal/</string>

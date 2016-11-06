@@ -2,11 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Theory of Computing Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T133000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T143000
-DESCRIPTION:Computational Efficiency and Robust Statistics\nIlias Diakonik
- olas\, USC
-LOCATION:Annenberg 213
+SUMMARY:Photography on Campus: Sergey & Arsine Margaryan Wedding Photo Sho
+ ot
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T143000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T163000
+LOCATION:Sites designated as approved for commercial still photography
 END:VEVENT
 END:VCALENDAR

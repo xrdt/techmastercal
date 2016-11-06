@@ -2,11 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:CD3 Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T100000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T110000
-DESCRIPTION:Deep Learning: the promise and the pitfalls\nAshish Mahabal\, 
- California Institute of Technology
-LOCATION:Powell-Booth 100 (Seminar Room)
+SUMMARY:(Men's Soccer) Caltech at SCIAC Postseason Tournament
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T000000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161106T000000
 END:VEVENT
 END:VCALENDAR

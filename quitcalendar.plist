@@ -13,7 +13,7 @@
         <key>Hour</key>
         <integer>01</integer>
         <key>Minute</key>
-        <integer>03</integer>
+        <integer>10</integer>
     </dict>
     <key>WorkingDirectory</key>
     <string>/users/janayang/techmastercal/</string>

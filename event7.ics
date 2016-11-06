@@ -2,10 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Caltech Library Workshop - "Introduction to 3D Printing at the Cal
- tech Library - Special Presentation by MAKEiT followed by Q&A"
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T140000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161103T153000
-LOCATION:Millikan 9th Floor
+SUMMARY:Wedding Photography on Campus: Mirakyan/Tahmasian Wedding Party
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T153000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T180000
+LOCATION:Sites designated as approved for commercial still photography
 END:VEVENT
 END:VCALENDAR

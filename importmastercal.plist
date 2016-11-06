@@ -6,7 +6,8 @@
 	<string>importmastercal</string>
     <key>ProgramArguments</key>
     <array>
-      <string>osascript techmastercal.scpt</string>
+      <string>osascript</string>
+      <string>techmastercal.scpt</string>
     </array>
 	<key>StartCalendarInterval</key>
 	<dict>
