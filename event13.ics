@@ -2,12 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:GALCIT Colloquium
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T150000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161104T160000
-DESCRIPTION:On the Ignition\, Combustion and Output of Pyrotechnic Devices
- \nMarcia Cooper\, Explosives Technologies Group\, Sandia National Laborato
- ries
-LOCATION:Guggenheim 133 (Lees-Kubota Lecture Hall)
+SUMMARY:Konstantin Batygin - Planet Nine from Outer Space
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T200000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T213000
 END:VEVENT
 END:VCALENDAR

@@ -2,8 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:(Women's Volleyball) Caltech at SCIAC Postseason Tournament
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T000000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161106T000000
+SUMMARY:Mathematical Physics Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T130000
+DESCRIPTION:Spectral asymptotics for fractional Laplacian\nVictor Ivrii\, 
+ Mathematics Department\, University of Toronto
+LOCATION:Sloan 257
 END:VEVENT
 END:VCALENDAR

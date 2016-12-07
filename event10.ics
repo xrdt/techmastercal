@@ -2,8 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:(Men's Basketball) Caltech at Long Beach St.
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T190000
+SUMMARY:Organic Chemistry Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T160000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T170000
+DESCRIPTION:Redirecting the Immune System for Cancer Therapy\nJulie Bailis
+ \, Dr.\, Ph.D.\, Oncology Research\, Amgen\, Inc.
+LOCATION:Noyes 153 (J. Holmes Sturdivant Lecture Hall)
 END:VEVENT
 END:VCALENDAR

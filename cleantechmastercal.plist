@@ -1,22 +1,27 @@
-<?xml version="1.0" endocing="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Label</key>
-    <string>cleantechmastercal</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>rm</string>
-        <string>*.ics</string>
-    </array>
-    <key>StartCalendarInverval</key>
-    <dict>
-        <key>Hour</key>
-        <integer>00</integer>
-        <key>Minute</key>
-        <integer>01</integer>
-    </dict>
-    <key>WorkingDirectory</key>
-    <string>/users/janyang/techmastercal/</string>
+  <key>Label</key>
+  <string>cleantechmastercal</string>
+  <key>UserName</key>
+  <string>janyang</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/users/janyang/techmastercal/cleanics.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Minute</key>
+    <integer>00</integer>
+    <key>Hour</key>
+    <integer>10</integer>
+  </dict>
+  <key>Debug</key>
+  <false/>
+  <key>AbandonProcessGroup</key>
+  <true/>
 </dict>
 </plist>
+

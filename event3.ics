@@ -2,8 +2,14 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:(Men's Soccer) Caltech at SCIAC Postseason Tournament
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T000000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161106T000000
+SUMMARY:MCE Ph.D. Thesis Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T100000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T110000
+DESCRIPTION:Computational modeling of the mechanics of elastic structural 
+ lattices: effects of lattice architecture and hierarchy\nPinaky Bhattachar
+ yya\, Optimal Sensor Placement for Bayesian Parametric Identiﬁcation of 
+ Structures\, Mechanical and Civil Engineering\, California Institute of Te
+ chnology
+LOCATION:Gates-Thomas 135
 END:VEVENT
 END:VCALENDAR

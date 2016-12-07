@@ -2,9 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Wedding Photography on Campus: ksadzhikyan Wedding Party
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T183000
-LOCATION:Sites designated as approved for commercial still photography
+SUMMARY:PhD Thesis Defense
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T150000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T160000
+DESCRIPTION:Stereoselective Ring-Opening Metathesis Polymerization Using C
+ yclometalated Ruthenium Alkylidene Complexes\nLauren Rosebrugh\, Graduate 
+ Student\, Chemistry\, Caltech
+LOCATION:Noyes 147 (J. Holmes Sturdivant Lecture Hall)
 END:VEVENT
 END:VCALENDAR

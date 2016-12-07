@@ -2,10 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Photography on Campus: Sergey & Arsine Margaryan Wedding Photo Sho
- ot
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T143000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T163000
-LOCATION:Sites designated as approved for commercial still photography
+SUMMARY:Resnick Institute Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T150000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T160000
+DESCRIPTION:Research talks from Resnick Postdoctoral Scholars Artur Davoya
+ n & Deep Jariwala
+LOCATION:Guggenheim 133 (Lees-Kubota Lecture Hall)
 END:VEVENT
 END:VCALENDAR

@@ -2,8 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:(Men's Water Polo) Whittier vs. Caltech
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T110000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161105T140000
+SUMMARY:Caltech Library Workshop - "You and Your Thesis"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T140000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T150000
+LOCATION:Sherman Fairchild Library 328 (Multimedia Conference Room)
 END:VEVENT
 END:VCALENDAR
