@@ -2,11 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Mathematical Physics Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T120000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T130000
-DESCRIPTION:Spectral asymptotics for fractional Laplacian\nVictor Ivrii\, 
- Mathematics Department\, University of Toronto
-LOCATION:Sloan 257
+SUMMARY:Winter Recess
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161210T000000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160103T000000
+LOCATION:no location
 END:VEVENT
 END:VCALENDAR

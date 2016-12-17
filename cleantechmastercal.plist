@@ -9,6 +9,7 @@
   <string>janyang</string>
   <key>ProgramArguments</key>
   <array>
+    <string>sh</string>
     <string>/users/janyang/techmastercal/cleanics.sh</string>
   </array>
   <key>StartCalendarInterval</key>
@@ -18,10 +19,6 @@
     <key>Hour</key>
     <integer>10</integer>
   </dict>
-  <key>Debug</key>
-  <false/>
-  <key>AbandonProcessGroup</key>
-  <true/>
 </dict>
 </plist>
 
