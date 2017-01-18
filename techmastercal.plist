@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>techmastercal</string>
+    <string>techmastercal</string>
+    <key>KeepAlive</key>
+    <false/>
     <key>ProgramArguments</key>
     <array>
       <string>/usr/local/bin/python</string>
@@ -12,7 +14,7 @@
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>00</integer>
+		<integer>10</integer>
 		<key>Minute</key>
         <integer>20</integer>
 	</dict>

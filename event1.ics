@@ -2,9 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Caltech post office open Sat Dec 17 and Sunday Dec 18
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161217T100000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161218T000000
-LOCATION:Keith Spalding Lobby
+SUMMARY:IST LUNCH BUNCH
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T130000
+DESCRIPTION:Learning to Optimize for Structured Output Spaces\nYisong Yue\
+ , Assistant Professor\, Computing and Mathematical Sciences\, California I
+ nstitute of Technology
+LOCATION:Annenberg 105
 END:VEVENT
 END:VCALENDAR

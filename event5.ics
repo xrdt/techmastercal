@@ -2,11 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Carnegie Observatories Colloquium Series
+SUMMARY:Empowering Learning through Teaching\, at Caltech and Beyond
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T170000
-DESCRIPTION:TBD\nProf. Rosalba Perna\, Stony Brook Univ.
-LOCATION:Carnegie Observatories\, 813 Santa Barbara St.\, William T. Golde
- n Auditorium
+LOCATION:Dabney Hall\, Lounge
 END:VEVENT
 END:VCALENDAR

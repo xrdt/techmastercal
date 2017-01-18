@@ -2,11 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Carnegie Observatories Colloquium Series
+SUMMARY:Logic Seminar
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T170000
-DESCRIPTION:TBD\nProf. Rosalba Perna\, Stony Brook Univ.
-LOCATION:Carnegie Observatories\, 813 Santa Barbara St.\, William T. Golde
- n Auditorium
+DESCRIPTION:A game-theoretic approach to Hjorth's turbulence theory\nMarti
+ no Lupini\, Department of Mathematics\, Caltech
+LOCATION:Sloan 153
 END:VEVENT
 END:VCALENDAR

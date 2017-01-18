@@ -7,16 +7,18 @@
   <string>cleantechmastercal</string>
   <key>UserName</key>
   <string>janyang</string>
+  <key>KeepAlive</key>
+  <false/>
   <key>ProgramArguments</key>
   <array>
-    <string>sh</string>
+    <string>bash</string>
     <string>/users/janyang/techmastercal/cleanics.sh</string>
   </array>
   <key>StartCalendarInterval</key>
   <dict>
-    <key>Minute</key>
-    <integer>00</integer>
     <key>Hour</key>
+    <integer>10</integer>
+    <key>Minute</key>
     <integer>10</integer>
   </dict>
 </dict>

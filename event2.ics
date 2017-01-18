@@ -2,8 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:(Women's Basketball) Caltech at Mount Mary
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161217T120000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161217T150000
+SUMMARY:PhD Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T140000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T150000
+DESCRIPTION:Engineering Protein Therapeutics:  Using Non-Canonical Amino A
+ cid Mutagenesis to Modulate Insulin Biophysics\nKatharine Fang\, graduate 
+ student\, Chemical Engineering\, California Institute of Technology
+LOCATION:Noyes 153 (J. Holmes Sturdivant Lecture Hall)
 END:VEVENT
 END:VCALENDAR

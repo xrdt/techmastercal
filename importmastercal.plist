@@ -12,9 +12,9 @@
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>01</integer>
+		<integer>10</integer>
 		<key>Minute</key>
-        <integer>00</integer>
+        <integer>40</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/users/janyang/techmastercal/</string>
