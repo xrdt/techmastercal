@@ -4,8 +4,6 @@
 <dict>
 	<key>Label</key>
     <string>techmastercal</string>
-    <key>KeepAlive</key>
-    <false/>
     <key>ProgramArguments</key>
     <array>
       <string>/usr/local/bin/python</string>
@@ -16,7 +14,7 @@
 		<key>Hour</key>
 		<integer>10</integer>
 		<key>Minute</key>
-        <integer>20</integer>
+        <integer>07</integer>
 	</dict>
 	<key>WorkingDirectory</key>
 	<string>/users/janyang/techmastercal/</string>

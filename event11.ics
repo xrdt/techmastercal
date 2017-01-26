@@ -2,11 +2,11 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Logic Seminar
+SUMMARY:Physics Research Conference
 DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T160000
 DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T170000
-DESCRIPTION:Large scale geometry of homeomorphism groups \nKathryn Mann\, 
- Department of Mathematics\, UC Berkeley
-LOCATION:Sloan 153
+DESCRIPTION:Imaging and remote sensing of other worlds\nDimitri Mawet\, As
+ sociate Professor of Astronomy\, Caltech
+LOCATION:East Bridge 201
 END:VEVENT
 END:VCALENDAR

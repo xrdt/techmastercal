@@ -2,12 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:PhD Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T140000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T150000
-DESCRIPTION:Engineering Protein Therapeutics:  Using Non-Canonical Amino A
- cid Mutagenesis to Modulate Insulin Biophysics\nKatharine Fang\, graduate 
- student\, Chemical Engineering\, California Institute of Technology
-LOCATION:Noyes 153 (J. Holmes Sturdivant Lecture Hall)
+SUMMARY:Radioactive Sealed Sources Orientation
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T103000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T113000
+LOCATION:Keith Spalding B117
 END:VEVENT
 END:VCALENDAR

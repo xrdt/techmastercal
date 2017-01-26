@@ -2,12 +2,9 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:IST LUNCH BUNCH
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T120000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T130000
-DESCRIPTION:Learning to Optimize for Structured Output Spaces\nYisong Yue\
- , Assistant Professor\, Computing and Mathematical Sciences\, California I
- nstitute of Technology
-LOCATION:Annenberg 105
+SUMMARY:Campus Architectural Tour
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T103000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T123000
+LOCATION:Athenaeum
 END:VEVENT
 END:VCALENDAR

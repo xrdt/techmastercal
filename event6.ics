@@ -2,12 +2,8 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Special Inorganic Chemistry Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T170000
-DESCRIPTION:Inorganic Molecular Precursors: The Quest for Function Through
-  Structure\nAlexandra Velian\, Dr.\, Department of Chemistry\, Columbia Un
- iversity
-LOCATION:Noyes 147 (J. Holmes Sturdivant Lecture Hall)
+SUMMARY:Caltech Toastmasters Club Meeting
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T130000
 END:VEVENT
 END:VCALENDAR

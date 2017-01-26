@@ -2,10 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Candlelight Vigil in Honor of Martin Luther King\, Jr
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T173000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T180000
-DESCRIPTION:MLK Week 2017
-LOCATION:Red Door Cafe
+SUMMARY:Organic Chemistry Seminar
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T140000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T150000
+DESCRIPTION:Cyclopolymerization Using Grubbs Catalysts\nTae-Lim Choi\, Ass
+ ociate Professor of Chemistry\, Department of Chemistry\, Seoul National U
+ niversity
+LOCATION:Noyes 153 (J. Holmes Sturdivant Lecture Hall)
 END:VEVENT
 END:VCALENDAR

@@ -2,11 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//My calendar product//mxm.dk//
 BEGIN:VEVENT
-SUMMARY:Logic Seminar
-DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T160000
-DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170117T170000
-DESCRIPTION:A game-theoretic approach to Hjorth's turbulence theory\nMarti
- no Lupini\, Department of Mathematics\, Caltech
-LOCATION:Sloan 153
+SUMMARY:Special TAPIR Seminar NOTE: Different Day than Usual
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T140000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170126T150000
+DESCRIPTION:Recent progress of compact binary merger simulations in Kyoto 
+ group\nKenta Kiuchi\, Research Associate Professor\, Yukawa Institute for 
+ Theoretical Physics\, Kyoto University\, Kyoto\, Japan
+LOCATION:Cahill 370
 END:VEVENT
 END:VCALENDAR
