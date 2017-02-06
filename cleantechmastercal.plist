@@ -3,13 +3,15 @@
  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>KeepAlive</key>
+  <true/>
   <key>Label</key>
   <string>cleantechmastercal</string>
   <key>UserName</key>
   <string>janyang</string>
   <key>ProgramArguments</key>
   <array>
-    <string>sh</string>
+    <string>bash</string>
     <string>/users/janyang/techmastercal/cleanics.sh</string>
   </array>
   <key>StartCalendarInterval</key>
